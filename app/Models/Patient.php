@@ -16,7 +16,7 @@ class Patient extends Model
         return $this->belongsTo(Owner::class);
     }
 
-    public function treatment(): HasMany
+    public function treatments(): HasMany
     {
         return $this->hasMany(Treatment::class);
     }
